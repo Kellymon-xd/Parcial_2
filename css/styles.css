@@ -9,10 +9,9 @@ body {
   font-family: Georgia, Cambria, Cochin, Times, 'Times New Roman', serif;
   background-color: #062030;
   color: white;
-  font-size: clamp(0.9rem, 1.5vw, 1rem); /* texto base responsive */
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
 }
 
-/* Ajuste de listas */
 ul {
   padding-left: 1.5rem;
   margin: 0 0 1rem 0;
@@ -22,6 +21,18 @@ li {
   margin-bottom: 0.5rem;
   list-style-position: inside;
   font-size: clamp(0.85rem, 1.5vw, 1rem);
+}
+
+.Subtitle {
+  width: 60%;
+  min-width: 45rem;
+  overflow: hidden;
+  margin: 2rem auto;
+}
+
+.Subtitle h3 {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  padding-bottom: 1rem;
 }
 
 /* ----------------------- HEADER ----------------------- */
@@ -150,18 +161,6 @@ header.main-header {
 .post-A a:hover {
   color: #0077cc;
   text-decoration: underline;
-}
-
-.Subtitle {
-  width: 60%;
-  min-width: 45rem;
-  overflow: hidden;
-  margin: 2rem auto;
-}
-
-.Subtitle h3 {
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  padding-bottom: 1rem;
 }
 
 /* ----------------------- POST B ----------------------- */
@@ -309,21 +308,19 @@ header.main-header {
 }
 
 /* ----------------------- RESPONSIVE ----------------------- */
-
-/* ----------------------- RESPONSIVE ----------------------- */
 @media (max-width: 768px) {
 
   /* Header principal */
   #principalTitle {
-    padding: 0 1rem; /* solo espacio lateral en móvil */
+    padding: 0 1rem;
   }
 
   /* Subtitle */
   .Subtitle {
-    padding: 0 1rem; /* solo espacio lateral en móvil */
-    width: 90%;      /* se adapta al ancho de la pantalla */
-    min-width: 0;    /* evita desbordamiento */
-    margin: 2rem auto; /* espacio arriba y abajo */
+    padding: 0 1rem;
+    width: 90%;
+    min-width: 0;
+    margin: 2rem auto;
   }
 
   /* Post A, C, D móvil */
