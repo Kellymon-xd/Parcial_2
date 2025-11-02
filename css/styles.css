@@ -1,0 +1,362 @@
+/* ----------------------- RESET Y BASE ----------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, Cambria, Cochin, Times, 'Times New Roman', serif;
+  background-color: #062030;
+  color: white;
+  font-size: clamp(0.9rem, 1.5vw, 1rem); /* texto base responsive */
+}
+
+/* Ajuste de listas */
+ul {
+  padding-left: 1.5rem;
+  margin: 0 0 1rem 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  list-style-position: inside;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+}
+
+/* ----------------------- HEADER ----------------------- */
+header.main-header {
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.674) 40%, rgba(0,0,0,0.7) 100%),
+              url("../img/img1.jpg") center / cover no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+/* ----------------------- NAVBAR ----------------------- */
+.navbar {
+  width: 100%;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+  position: relative;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+  background-color: #00aaff;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* ----------------------- TÍTULO PRINCIPAL ----------------------- */
+#principalTitle {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#principalTitle h1,
+#principalTitle p {
+  margin: 0;
+}
+
+#principalTitle h1 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  padding-bottom: 0.8rem;
+}
+
+#principalTitle p {
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  max-width: 80%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* ----------------------- POST A ----------------------- */
+.post-A {
+  display: flex;
+  width: 60%;
+  min-width: 45rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin: 3rem auto;
+  background-color: rgb(18, 64, 116);
+}
+
+.post-A .parte-derecha {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post-A .parte-izquierda {
+  flex: 0.5;
+  position: relative;
+}
+
+.post-A .parte-izquierda img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-A h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  padding-bottom: 1.5rem;
+}
+
+.post-A p {
+  font-size: clamp(0.9rem, 1.8vw, 1rem);
+  padding-bottom: 1rem;
+}
+
+.post-A a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-A a:hover {
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+.Subtitle {
+  width: 60%;
+  min-width: 45rem;
+  overflow: hidden;
+  margin: 2rem auto;
+}
+
+.Subtitle h3 {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  padding-bottom: 1rem;
+}
+
+/* ----------------------- POST B ----------------------- */
+.post-B {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  background-color: rgb(18, 64, 116);
+  margin-bottom: 2%;
+  overflow: hidden;
+}
+
+.post-B .lado-derecho {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: left;
+}
+
+.post-B .lado-izquierdo {
+  position: relative;
+}
+
+.post-B .lado-izquierdo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-B .lado-derecho h3 {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  margin-bottom: 2rem;
+}
+
+.post-B .lado-derecho p {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* ----------------------- POST C ----------------------- */
+.post-C {
+  display: block;
+  width: 60%;
+  min-width: 45rem;
+  max-width: 60%;
+  margin: 3rem auto;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  background-color: rgb(18, 64, 116);
+  text-align: center;
+}
+
+.post-C h2 {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  margin-bottom: 1rem;
+}
+
+.post-C p {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.6;
+}
+
+/* ----------------------- POST D ----------------------- */
+.post-D {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  min-width: 45rem;
+  margin: 1rem auto;
+}
+
+.post-D .partes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.post-D .partes > div.parte {
+  flex: 1 1 200px;
+  background-color: rgb(18, 64, 116);
+  border-radius: 0.5rem;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.post-D .parte-con-img {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(18, 64, 116);
+  border-radius: 0.5rem;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.post-D .parte-con-img .parte-img {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.post-D .parte-con-img .parte-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.post-D .parte-con-img .contenido {
+  padding: 1rem;
+}
+
+.post-D h3 {
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  margin-bottom: 1rem;
+}
+
+.post-D h4 {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  margin-bottom: 0.5rem;
+}
+
+.post-D p {
+  font-size: clamp(0.9rem, 1.8vw, 1rem);
+  margin-bottom: 0.5rem;
+}
+
+/* ----------------------- FOOTER ----------------------- */
+.main-footer {
+  background-color: rgb(18, 64, 116);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+}
+
+/* ----------------------- RESPONSIVE ----------------------- */
+
+/* ----------------------- RESPONSIVE ----------------------- */
+@media (max-width: 768px) {
+
+  /* Header principal */
+  #principalTitle {
+    padding: 0 1rem; /* solo espacio lateral en móvil */
+  }
+
+  /* Subtitle */
+  .Subtitle {
+    padding: 0 1rem; /* solo espacio lateral en móvil */
+    width: 90%;      /* se adapta al ancho de la pantalla */
+    min-width: 0;    /* evita desbordamiento */
+    margin: 2rem auto; /* espacio arriba y abajo */
+  }
+
+  /* Post A, C, D móvil */
+  .post-A,
+  .post-C,
+  .post-D {
+    flex-direction: column;
+    width: 90%;
+    min-width: 0;
+    margin: 1rem auto;
+  }
+
+  /* Post B móvil */
+  .post-B {
+    grid-template-columns: 1fr;
+  }
+
+  .post-B .lado-izquierdo img {
+    height: auto;
+  }
+
+  .post-B .lado-derecho {
+    padding: 2rem;
+    justify-content: flex-start;
+  }
+
+  /* Títulos principales móviles */
+  #principalTitle h1 {
+    font-size: clamp(1.3rem, 5vw, 1.5rem);
+  }
+
+  #principalTitle p {
+    font-size: clamp(0.85rem, 2.5vw, 0.9rem);
+    max-width: 90%;
+  }
+}
